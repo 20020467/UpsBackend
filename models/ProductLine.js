@@ -9,6 +9,11 @@ module.exports = (sequelize, DataTypes) =>
         allowNull: false,
         field: "product_line_id",
       },
+      productSetId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        field: "product_set_id",
+      },
       name: {
         type: DataTypes.STRING,
         allowNull: false,

@@ -50,7 +50,12 @@ module.exports = (sequelize, DataTypes) =>
       },
       description: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
+      },
+      feature: {
+        // chức năng chính
+        type: DataTypes.STRING,
+        // allowNull: false,
       },
     },
     {

@@ -1,28 +1,21 @@
 module.exports = (sequelize, DataTypes) =>
   sequelize.define(
-    "Account",
+    "ProductSet",
     {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
+        field: "product_set_id",
       },
-      username: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: "username",
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      role: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        unique: "name",
       },
     },
     {
-      tableName: "Account",
+      tableName: "ProductSet",
     }
   );
