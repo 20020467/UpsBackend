@@ -14,108 +14,87 @@ module.exports = (sequelize, DataTypes) =>
         // allowNull: false,
         field: "product_id",
       },
-      Capacity: {
-        type: DataTypes.STRING,
-      },
-      Technology: {
-        type: DataTypes.STRING,
-      },
-      phaseNumber: {
-        type: DataTypes.STRING,
-      },
-      isolationTransformer: {
+      cong_suat: {
         type: DataTypes.STRING,
       },
 
-      ACInputVoltage: {
+      // thông số đầu vào
+      dai_dien_ap: {
         type: DataTypes.STRING,
       },
-      VoltageRange: {
+      tan_so_vao: {
         type: DataTypes.STRING,
       },
-      FrequencyRange: {
-        type: DataTypes.STRING,
-      },
-      powerFactorIN: {
-        type: DataTypes.STRING,
-      },
-
-      OutputACVoltage: {
-        type: DataTypes.STRING,
-      },
-      ACVoltageRegulator: {
-        type: DataTypes.STRING,
-      },
-      SynFrequencyRange: {
-        type: DataTypes.STRING,
-      },
-      BatteryFrequencyRange: {
-        type: DataTypes.STRING,
-      },
-      timeACtobattery: {
-        type: DataTypes.STRING,
-      },
-      timeInterverBypass: {
-        type: DataTypes.STRING,
-      },
-      wave: {
-        type: DataTypes.STRING,
-      },
-      powerFactorOUT: {
+      so_pha: {
         type: DataTypes.STRING,
       },
 
-      battery: {
+      // thông số đầu ra
+      dien_ap: {
         type: DataTypes.STRING,
       },
-      numberOfBattery: {
+      dien_ap_che_do_ac_quy: {
         type: DataTypes.STRING,
       },
-      ChargingCurrent: {
+      tan_so_ra: {
         type: DataTypes.STRING,
       },
-      ChargingVoltage: {
+      dang_song: {
         type: DataTypes.STRING,
       },
-
-      ACMode: {
-        type: DataTypes.STRING,
-      },
-      batteryModeEfficiency: {
+      thoi_gian_chuyen_mach: {
         type: DataTypes.STRING,
       },
 
-      LCDScreen: {
+      // Thông số ắc quy
+      loai_ac_quy: {
         type: DataTypes.STRING,
       },
-      batteryWaring: {
-        type: DataTypes.STRING,
-      },
-      lowBattery: {
-        type: DataTypes.STRING,
-      },
-      overLoad: {
-        type: DataTypes.STRING,
-      },
-      error: {
+      thoi_gian_sac: {
         type: DataTypes.STRING,
       },
 
-      ProductDimensions: {
+      // Chức năng bảo vệ
+      bv_ngan_mach: {
         type: DataTypes.STRING,
       },
-      mass: {
+      bv_xung: {
+        type: DataTypes.STRING,
+      },
+      canh_bao: {
+        type: DataTypes.STRING,
+      },
+      bv_qua_tai: {
+        type: DataTypes.STRING,
+      },
+      quan_ly_ac_quy: {
         type: DataTypes.STRING,
       },
 
-      NoiseLevel: {
-        type: DataTypes.STRING,
-      },
-      ActiveHumidity: {
+      // kết nối
+      cong_USB: {
         type: DataTypes.STRING,
       },
 
-      USB: {
+      //Môi trường hoạt động
+      do_on_hd: {
+        type: DataTypes.STRING,
+      },
+      nhiet_do_hd: {
+        type: DataTypes.STRING,
+      },
+      do_am_hd: {
+        type: DataTypes.STRING,
+      },
+      he_so_cong_suat: {
+        type: DataTypes.STRING,
+      },
+
+      // Thông số vật lý
+      kich_thuoc: {
+        type: DataTypes.STRING,
+      },
+      trong_luong: {
         type: DataTypes.STRING,
       },
     },
